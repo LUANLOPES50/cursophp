@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuracao>
+    <!-- Configurações Globais da API -->        
+    <charset>utf8</charset>
+    <jwt_secret>intraer</jwt_secret>
+    <servidor>desenv</servidor>	
+    <emailDesenvolvimento>desenv_vti@ciscea.gov.br</emailDesenvolvimento>  <!-- Email Desenvolvimento (VTI) -->	
+    <url>http://localhost</url>
+    <ipServidor>127.0.0.1</ipServidor>
+
+	<ip_host_email>172.16.8.90</ip_host_email>  <!-- Servidor E-mail -->
+	<dns_hos_email>tora</dns_hos_email>
+	<porta_host_email>25</porta_host_email>
+	<user_email>vti</user_email>
+	<pass_user_email>vt1c15c3@*#</pass_user_email>
+    
+	
+	<!-- Conexões de Banco de Dados -->
+	<host>localhost</host>
+	<usuario>root</usuario>
+	<senha></senha>
+
+	<host_jornal>localhost</host_jornal>
+	<usuario_jornal>root</usuario_jornal>
+	<senha_jornal></senha_jornal>
+	
+	<host_pdo>localhost</host_pdo>
+	<usuario_pdo>root</usuario_pdo>
+	<senha_pdo></senha_pdo>
+	
+	<host_cim>localhost</host_cim>
+	<usuario_cim>root</usuario_cim>
+	<senha_cim></senha_cim>
+	<db_cim>dadossigadb</db_cim>
+
+	<host_ctcea>localhost</host_ctcea>
+	<usuario_ctcea>root</usuario_ctcea>
+	<senha_ctcea></senha_ctcea>
+
+	<host_grd>localhost</host_grd>
+	<usuario_grd>root</usuario_grd>
+	<senha_grd></senha_grd>
+	
+	<!-- sisgat -->
+	<host_sisgat>localhost</host_sisgat>
+	<usuario_sisgat>root</usuario_sisgat>
+	<senha_sisgat></senha_sisgat>
+
+    <host_siscod>localhost</host_siscod>
+	<usuario_siscod>root</usuario_siscod>
+	<senha_siscod></senha_siscod>
+
+	<host_spessoal>localhost</host_spessoal>
+	<bd_spessoal>siscadpessoaldb</bd_spessoal>
+	<usuario_spessoal>root</usuario_spessoal>
+	<senha_spessoal></senha_spessoal>
+
+	<host_intraer>localhost</host_intraer>
+	<bd_intraer>intraerdb</bd_intraer>
+	<usuario_intraer>root</usuario_intraer>
+	<senha_intraer></senha_intraer>
+
+	<host_internet>localhost</host_internet>
+	<usuario_internet>root</usuario_internet>
+	<senha_internet></senha_internet>
+
+		<!-- Servidor do Service Desk  -->
+	<host_sd>localhost</host_sd>
+	<bd_sd>servicedeskdb</bd_sd>
+	<usuario_sd>root</usuario_sd>
+	<senha_sd></senha_sd>
+
+	<host_cod>localhost</host_cod>
+	<usuario_cod>root</usuario_cod>
+	<senha_cod></senha_cod>
+
+	<db_grcic>grcicdb</db_grcic>
+	<host_grcic>localhost</host_grcic>
+	<usuario_grcic>root</usuario_grcic>
+	<senha_grcic></senha_grcic>
+
+	<tab_grcic>t_visitas</tab_grcic>
+	<grcic_cookies>0</grcic_cookies>
+	<email_grcic>desenv_vti@ciscea.gov.br</email_grcic>
+
+	<!-- <host_nexo_pg>172.16.8.130</host_nexo_pg> -->
+	<host_nexo_pg>10.32.63.103</host_nexo_pg>
+	<usuario_nexo_pg>nexoconsulta</usuario_nexo_pg>
+	<senha_nexo_pg>nexoconsulta</senha_nexo_pg>
+	<port_nexo_pg>5432</port_nexo_pg>
+	<bd_nexo_pg>nexo</bd_nexo_pg>
+	<!-- <bd_nexo_pg>nexo_producao</bd_nexo_pg> -->
+
+	<!--importação dos documentos do sged -->
+	<db_sged>sgeddb</db_sged>
+	<host_sged>172.16.8.106:3306</host_sged>
+	<usuario_sged>root</usuario_sged>
+	<senha_sged></senha_sged>
+	
+	<!-- Web Service SISGAT -->
+	<wsAcionamento>http://api.servicos.ccarj.intraer/inoperancia-api/api/garantia/acionamentos</wsAcionamento>
+	<wsMaterial>http://api.servicos.ccarj.intraer/inoperancia-api/api/garantia/materiais</wsMaterial>
+	<wsEquipamento>http://api.servicos.ccarj.intraer/inoperancia-api/api/garantia/equipamentos</wsEquipamento>
+	<wsInop>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancias/unidade/CISCEA</wsInop>
+	<wsAcaoInop>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancias/acoes/CISCEA</wsAcaoInop>
+	<wsProv>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancias/providencias/CISCEA</wsProv>
+	<wsSetor>http://api.servicos.ccarj.intraer/inoperancia-api/api/setor/sisceab</wsSetor>
+	<wsIls>http://api.servicos.ccarj.intraer/inoperancia-api/api/materiais/componentes/ils/</wsIls>
+	<wsModelo>http://api.servicos.ccarj.intraer/inoperancia-api/api/materiais/modelos/eletronicos/</wsModelo>
+	<wsMotivo>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancias/motivos/</wsMotivo>
+	<wsPnlha>http://api.servicos.ccarj.intraer/inoperancia-api/api/materiais/pnlha/eletronico</wsPnlha>
+	<wsPrior>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancia/prioridades/</wsPrior>
+	<wsProjeto>http://api.servicos.ccarj.intraer/inoperancia-api/api/projetos/tipoprojeto/E</wsProjeto>
+	<wsRegionais>http://api.servicos.ccarj.intraer/inoperancia-api/api/unidades/regionais</wsRegionais>
+	<wsRestricao>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancia/restricoes/</wsRestricao>
+	<wsSerial>http://api.servicos.ccarj.intraer/inoperancia-api/api/equipamentos/eletronicos/serialnumber</wsSerial>
+	<wsSitTecnica>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancia/situacaotecnica/</wsSitTecnica>
+	<wsStatus>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancia/status/</wsStatus>
+	<wsTipoacao>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancias/tipoacao</wsTipoacao>
+	<wsTipoinop>http://api.servicos.ccarj.intraer/inoperancia-api/api/inoperancia/tipos/</wsTipoinop>
+	<wsUnidade>http://api.servicos.ccarj.intraer/inoperancia-api/api/unidades/destacamentos/SISCEAB</wsUnidade>
+
+	<!-- Importa��o dos dados das metas do nexo 
+	<servicoNexoProjeto>http://10.52.199.12:3000/api/projeto/lista/OM/120127</servicoNexoProjeto>
+	<servicoNexoDetalheProjeto>http://10.52.199.12:3000/api/projeto/</servicoNexoDetalheProjeto>
+	-->
+	<servicoNexoProjeto>http://10.52.199.12:3000/api/projeto/lista/completa/OM/120127</servicoNexoProjeto>
+	<servicoNexoDetalheProjeto>http://10.52.199.12:3000/api/projeto/</servicoNexoDetalheProjeto>
+	
+	<contratoSiga>http://10.52.199.12:3000/api/contrato/contratante/1</contratoSiga>
+
+		
+	<!-- Email ouvidoria BIM -->
+	<emailOuvidoriaBim>desenv_vti@ciscea.gov.br</emailOuvidoriaBim>
+	
+	<!-- Email sistema de garantias (DL - garantia.lst@ciscea.gov.br) -->
+	<emailSistemaGarantia>desenv_vti@ciscea.gov.br</emailSistemaGarantia>
+	
+	<!-- Email de suporte para o sistema de garantias (DL - suportesisgat@ciscea.gov.br) -->
+	<emailSuporteSisgat>desenv_vti@ciscea.gov.br</emailSuporteSisgat>
+	
+	<!-- preencha esse dado para fins de teste. Quando em produ��o preencha com os dados acima -->
+	<emailSistemaGarantiaFake>desenv_vti@ciscea.gov.br</emailSistemaGarantiaFake>
+	
+	
+	<!-- ############################## Demanda Jornal�stica ############################################ -->
+	<!-- Email sistema de demandas jornal�sticas (SECOM - camille@ciscea.gov.br) -->
+	<emailSistemaJornalistica>desenv_vti@ciscea.gov.br</emailSistemaJornalistica>
+	
+	<!-- preencha esse dado somente para fins de teste. Quando sistema em produ��o deixe em branco -->
+	<emailSistemaJornalisticaFake>desenv_vti@ciscea.gov.br</emailSistemaJornalisticaFake>
+	
+	<!-- e-mail para pagina de contato intraer -->
+	<emailFaleComPr>desenv_vti@ciscea.gov.br</emailFaleComPr>
+	<emailFaleComVice>desenv_vti@ciscea.gov.br</emailFaleComVice>
+	
+	<!-- ################################################################################################ -->
+
+</configuracao>
